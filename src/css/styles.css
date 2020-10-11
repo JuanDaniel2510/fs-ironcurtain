@@ -1,0 +1,39 @@
+body {
+  background-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+#viewport {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+#top {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: xx-large;
+  background-color: darkturquoise;
+}
+
+canvas {
+  width: 1280px;
+  height: 720px;
+  border: 1px solid black;
+  background-color: cyan;
+}
+
+#foot {
+  margin: 0;
+  padding: 0;
+  background-color: coral;
+}
