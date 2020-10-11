@@ -4,7 +4,12 @@
   "description": "Custom reinplementation of the game Missile Command",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html -d build --public-url /fs-bingo",
+    "deploy": "gh-pages -d build",
+    "launch": "npm run clean && parcel build src/index.html -d build --public-url /fs-bingo && gh-pages -d build",
+    "clean": "rm -rf dist build .cahe"
   },
   "author": "Juan Daniel",
   "license": "GNUv3",
